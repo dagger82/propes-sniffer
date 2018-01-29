@@ -250,7 +250,7 @@ void loop() {
     json = json + "]}";
   Serial.println("json:" + json);
   
-    http.begin("http://192.168.43.1:8080/rs.php");
+    http.begin("http://192.168.43.1:8080/wifi.php");
     http.addHeader("Content-Type", "application/json");
     http.POST(json);
     http.end();
